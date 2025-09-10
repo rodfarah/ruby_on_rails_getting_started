@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resource :session
+  resources :passwords, param: :token
   # resources :products # criaria automaticamente todas as rotas padrão para CRUD
   # não utilizarei para aprender a fazer as rotas na mão.
   root "products#index" # localhost:3000 levará ao index.
